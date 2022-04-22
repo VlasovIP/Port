@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Визитка VIP</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="navbar">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#начало" class="nav_link">Начало</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#обо-мне" class="nav_link">Обо мне</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#портфолио" class="nav_link">Портфолио</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#прайс" class="nav_link">Прайс</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#контакты" class="nav_link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="right_site">
+                        <img class="logo" src="img/logo.png">
+                </div>
+            </div>
+        </div>
+    </nav>
+<a name="начало"></a>
+<header>
+    <div class="container">
+        <div class="section_heading">
+            <div class="header_body">
+                <div class="WebInfo">
+                    <h2 class="white">Привет</h2>
+                    <h1>Я <span class="blue">Веб -<br>Дизайнер</span></h1>
+                    <p>Работаю быстро <br>Делаю качественно <br>Не беру много денег</p>
+                </div>
+                <img src="img/My_photo.png" class="my_photo">
+            </div>
+        </div>
+    </div>
+</header>
+<a name="обо-мне"></a>
+    <section class="About_me">
+        <div class="container">
+            <div class="section_heading">
+                <h2 class="border_l">Обо мне</h2>
+                <div>
+                    <p>Меня зовут Юрий Джонс. Работаю Web-Дизайнером. Имею достаточный опыт работы и знаю все, что мне нужно, для того, чтобы моя работа выглядела великолепно и стоила своих денег. Я не беру много денег за работу, все делаю вовремя, принимаю заказы любого уровня сложности.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a name="портфолио"></a>
+    <section class="Portfolio">
+        <div class="container">
+            <div class="section_heading">
+                <h2 class="border_r">Портфолио</h2>
+                <h3>Мое портфолио состоит из:</h3>
+                <p class="hint hint_portfolio">Наведите на выделенный текст, чтобы узнать об этом больше.</p>
+                <p>- Макетов в <span class="portfolio_blue" title="Программа для разработки интерфейсов от Adobe Systems. Поддерживает векторную графику и веб-верстку и создает небольшие активные прототипы.">Adobe XD</span>, <span class="portfolio_blue" title="Adobe Photoshop — многофункциональный графический редактор, разрабатываемый и распространяемый компанией Adobe Systems. В основном работает с растровыми изображениями, однако имеет некоторые векторные инструменты.">Photoshop</span>, <span class="portfolio_blue" title="Онлайн-сервис для разработки интерфейсов и прототипирования с возможностью организации совместной работы в режиме реального времени.">Figma</span>.<br>
+                - Обработок фотографий в <span class="portfolio_blue" title="Adobe Photoshop — многофункциональный графический редактор, разрабатываемый и распространяемый компанией Adobe Systems. В основном работает с растровыми изображениями, однако имеет некоторые векторные инструменты.">Photoshop</span>.<br>
+                - Различных логотипов и этикеток.<br>
+                - Видео моей работы.
+                <div class="portfolio_github">
+                    <h3 class="portfolio_port">Моё портфолио можно увидеть на моём <span class="portfolio_blue" title="Крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки.">GitHub</span>:</h3>
+                    <button class="portfolio_button" href="#">Смотреть</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a name="прайс"></a>
+    <section class="Price">
+        <div class="container">
+            <div class="section_heading">
+                <h2 class="border_l">Прайс</h2>
+                <div class="price_txt">
+                    <h3>Все мои услуги и их примерная стоимость:</h3>
+                    <p class="hint">Нажмите "Подробнее" чтобы узнать полную информацию об услуге.</p>
+                </div>
+                <div class="price_cards">
+                    <div class="price_card card_1">
+                        <div class="card_head">
+                            <img src="img/Price_img/maket.png" class="price_photo">
+                            <h3 class="white">Макет сайта</h3>
+                            <p class="cart_p">Цена: <span class="blue">≈ 100$</span></p>
+                        </div>
+                        <button class="read_more" onclick="document.querySelector('.popup1').style.display = 'block'">Подробнее</button>
+                    </div>
+                    <div class="price_card card_2">
+                        <div class="card_head">
+                            <img src="img/Price_img/logo-et.png" class="price_photo">
+                            <h3 class="white">Логотип/Этикетка</h3>
+                            <p class="cart_p">Цена: <span class="blue">≈ 50$</span></p>
+                        </div>
+                        <button class="read_more" onclick="document.querySelector('.popup2').style.display = 'block'">Подробнее</button>
+                    </div>
+                    <div class="price_card card_3">
+                        <div class="card_head">
+                            <img src="img/Price_img/other.png" class="price_photo">
+                            <h3 class="white">Другое</h3>
+                            <p class="cart_p">Цена: <span class="blue">--- $</span></p>
+                        </div>
+                        <button class="read_more" onclick="document.querySelector('.popup3').style.display = 'block'">Подробнее</button>
+                    </div>
+                </div>
+                <div class="popup popup1">
+                    <div class="modal">
+                        <div class="modal_body">
+                            <div class="modal_head">
+                                <h2 class="modal_h">Макет сайта</h3>
+                                <button class="modal_button" onclick="document.querySelector('.popup1').style.display = 'none'"><img src="img/x.png" class="x_img"></button>
+                            </div>
+                            <div class="modal_content">
+                                <p>Макет сайта - это его реалистичный прототип, созданный в графической программе вроде Photoshop. Он выглядит как готовый сайт: со всеми блоками текста и изображений, кнопками, фоновыми рисунками и так далее. Единственное отличие в том, что в макете нет функционального наполнения: например, страница с товарами заполнена шаблонами описаний.</p>
+                                <p>Макет сайта - это результат работы дизайнера по заданию заказчика. Дальше макет переходит к верстальщику и программисту, эти специалисты уже превращают графический файл в настоящий сайт.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup popup2">
+                    <div class="modal">
+                        <div class="modal_body">
+                            <div class="modal_head">
+                                <h2 class="modal_h">Логотип/Этикетка</h3>
+                                <button class="modal_button" onclick="document.querySelector('.popup2').style.display = 'none'"><img src="img/x.png" class="x_img"></button>
+                            </div>
+                            <div class="modal_content">
+                                <p>Логотип - это графический знак, эмблема или символ, используемый территориальными образованиями, коммерческими предприятиями, организациями и частными лицами для повышения узнаваемости и распознаваемости в социуме.</p>
+                                <p>Этикетка - это опознавательный знак, сочетающий в себе текст и графику с указанием торговой марки производителя, названия, даты производства, срока годности и так далее.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup popup3">
+                    <div class="modal">
+                        <div class="modal_body">
+                            <div class="modal_head">
+                                <h2 class="modal_h">Другое</h3>
+                                <button class="modal_button" onclick="document.querySelector('.popup3').style.display = 'none'"><img src="img/x.png" class="x_img"></button>
+                            </div>
+                            <div class="modal_content">
+                                <p>Веб дизайнер имеет большое количество навыков и способностей. Он выполняет различную работу связанную с веб дизайном. Поэтому все услуги просто не получится уместить на этом сайте так, чтобы это было не громоздко.</p>
+                                <p>Пишите мне в соц сетях, обсудим цены и дальнейшее сотрудничество.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a name="контакты"></a>
+    <section class="Contacts">
+        <div class="container">
+            <div class="section_heading">
+                <div class="body_contacts">
+                    <div class="left_site_contacts">
+                        <div class="width_limitation">
+                            <p>Мои социальные сети</p>
+                            <div class="social_links">
+                                <a class="contact_a">
+                                    <img src="img/Social_img/discord.png" class="contact_img">
+                                </a>
+                                <a class="contact_a">
+                                    <img src="img/Social_img/facebook.png" class="contact_img">
+                                </a>
+                                <a class="contact_a">
+                                    <img src="img/Social_img/instagram.png" class="contact_img">
+                                </a>
+                                <a class="contact_a">
+                                    <img src="img/Social_img/steam.png" class="contact_img">
+                                </a>
+                                <a class="contact_a">
+                                    <img src="img/Social_img/vk.png" class="contact_img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/inv_logo.png" class="contact_logo">
+                    <div class="right_site_contacts">
+                        <p>Профили на биржах</p>
+                            <div class="exchanges_div">
+                                <div>
+                                    <a class="exchanges_a">weblancer</a>
+                                </div>
+                                <div>
+                                    <a class="exchanges_a">freelancehunt</a>
+                                </div>
+                                <div>
+                                    <a class="exchanges_a">fl.ru</a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Сайт создан © V.I.P. | 2022, Все права защищены.</p>
+    </footer>
+</body>
+</html>

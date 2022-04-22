@@ -1,0 +1,820 @@
+
+body{
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 0;
+    padding: 0 auto;
+    color: whitesmoke;
+    font-family: 'Roboto Condensed-bold', sans-serif;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+h2{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: #1d2c3b;
+    font-family: 'Roboto Condensed-bold', sans-serif;
+    font-size: 60px;
+    padding: 0 auto;
+    font-weight: 400;
+}
+
+h3{
+    color: #1d2c3b;
+    font-family: 'Roboto Condensed-bold', sans-serif;
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 0 auto;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+p{
+    font-size: 30px;
+    font-family: 'Roboto Condensed-bold', sans-serif;
+    color: #1d2c3b;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 auto;
+    font-weight: 300;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.section_heading{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1040px;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: whitesmoke;
+    box-shadow: 0px 1px 15px #1d2c3b50;
+}
+
+.navbar{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav_item{
+    display: inline;
+    margin: auto;
+}
+
+.nav_item:not(:last-child){
+    margin-right: 20px;
+}
+
+.nav_link{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Roboto Condensed-bold', sans-serif;
+    transition: 0.2s;
+}
+
+.nav_link:hover{
+    font-size: 22px;
+    border-bottom: 1px solid #1d2c3b;
+}
+
+.nav_list{
+    padding: 0px;
+    margin: auto;
+    margin-left: 10px;
+    width: 550px;
+}
+
+.logo{
+    width: auto;
+    height: 50px;
+    margin: auto;
+}
+
+header{
+    background-image: url(img/Fone.jpg);
+    z-index: 1;
+    position: relative;
+    padding-top: 25px;
+}
+
+header::before{
+    height: 0;
+    bottom: 0;
+    right: 0;
+    left:0;
+    z-index: -1;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.753);
+}
+
+header p{
+    color: whitesmoke;
+}
+
+.header_body{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    margin-bottom: 0px;
+}
+
+.WebInfo{
+    margin-top: 100px;
+}
+
+.my_photo{
+    width: auto;
+    height: 600px;
+}
+
+.white{
+    color: whitesmoke;
+}
+
+.blue{
+    color:  #42AAFF;
+    transition: 0.2s;
+}
+
+.portfolio_blue{
+    color:  #42AAFF;
+}
+
+.portfolio_blue:hover{
+    cursor: help;
+}
+
+.hint{
+    font-family: 'Roboto Condensed-bold', sans-serif;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.border_l{
+    border-left: 7px solid  #42AAFF;
+    padding-left: 25px;
+    margin-left: 25px;
+}
+
+.border_r{
+    border-right: 7px solid  #42AAFF;
+    padding-right: 25px;
+    margin-right: 25px;
+}
+
+.right_site{
+    margin: auto;
+    display: flex;
+    margin-right: 10px;
+}
+
+.About_me{
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+.About_me p{
+    width: 730px;
+    margin: 15px 0px 0px 15px;
+    font-size: 25px;
+}
+
+.Portfolio{
+    padding-top: 95px;
+    padding-bottom: 95px;
+    background-color: rgb(240, 240, 240);
+}
+
+.Portfolio h2{
+    text-align: right ;
+}
+
+.portfolio_button{
+    margin-top: 15px;
+    text-align: center;
+    border: none;
+    font-family: 'Roboto Condensed-bold', sans-serif;
+    font-size: 20px;
+    padding-left: 13px;
+    padding-right: 13px;
+    background-color: #42AAFF;
+    height: 35px;
+    color: whitesmoke;
+    transition: 0.2s;
+}
+
+.portfolio_button:hover{
+
+    cursor: pointer;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 1px 1px #1d2c3b3a;
+    color:#42AAFF;
+}
+
+.portfolio_github{
+    margin-left: auto;
+    margin-top: 25px;
+    display: flex;
+    width: 800px;
+    text-align: right;
+}
+
+.Price{
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+.price_txt{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.price_cards{
+    margin-top: 50px;
+    gap: 25px;
+    display: grid;
+    grid-template-areas: 
+    "A B C";
+}
+
+.price_card{
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 1px 1px #1d2c3b38;
+    transition: 0.2s;
+}
+
+.price_card:hover{
+    box-shadow: 0px 0px 3px 2px #1d2c3b38;
+}
+
+.price_photo{
+    margin-top: 35px;
+    margin-bottom: 5px;
+    width: auto;
+    height: 200px;
+}
+
+.card_head{
+    text-align: center;
+    background-color: #1d2c3b;
+}
+
+.read_more{
+    height: 70px;
+    font-size: 25px;
+    font-family: 'Roboto Condensed-bold', sans-serif;
+    border: none;
+    background-color: white;
+    color: #1d2c3b;
+    transition: 0.3s;
+}
+
+.read_more:hover{
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.cart_p{
+    color: whitesmoke;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+.cart_1{
+    grid-area: A;
+}
+
+.cart_2{
+    grid-area: B;
+}
+
+.cart_3{
+    grid-area: C;
+}
+
+.Contacts{
+    background-color: #42AAFF;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.width_limitation{
+    width: 310px;
+}
+
+.social_links{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.contact_img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    transition: 0.1s;
+}
+
+.Contacts p{
+    font-size: 29px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.body_contacts{
+    justify-content: space-between;
+    display: flex;
+}
+
+.left_site_contacts{
+    display: flex;
+    flex-direction: column;
+}
+
+.exchanges_div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 310px;
+}
+
+.right_site_contacts{
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+}
+
+.exchanges_a{
+    font-family: 'Roboto Condensed-bold', sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+    border-bottom: 1px solid  whitesmoke;
+    transition: 0.3s;
+}
+
+.exchanges_a:hover{
+    font-size: 22px;
+    cursor: pointer;
+    border-bottom: 2px solid  whitesmoke;
+}
+
+.contact_logo{
+    width: auto;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: 23px;
+}
+
+.contact_a:hover img{
+    height: 45px;
+    width: auto;
+    margin: 0px;
+    cursor: pointer;
+}
+
+footer{
+    padding: 25px 0 25px 0;
+    background-color: #1d2c3b;
+}
+
+footer p{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+}
+
+.modal{
+    padding: 30px;
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal_body{
+    max-width: 900px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 3px 1px #00000023;
+}
+
+.modal_head{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1d2c3b;
+    align-items: center;
+    padding: 15px 20px 15px 40px;
+}
+
+
+.modal_content{
+    padding: 0px 25px 25px 25px;
+}
+
+
+.x_img{
+    width: 35px;
+    height: 35px;
+    transition: 0.2s;
+}
+
+.modal_button{
+    background-color: #1d2c3b;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+
+.modal_button:hover .x_img{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+
+.modal_h{
+    font-size: 40px;
+    color: whitesmoke;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.popup{
+    display: none;
+    background-color: #0000009a;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+@media (max-width: 1200px){
+    .container{
+        width: 992px;
+    }
+    .section_heading{
+        width: 940px;
+    }
+
+    .WebInfo{
+        margin-top: 50px;
+    }
+
+    .hint_portfolio{
+        display: none;
+    }
+
+    .portfolio_blue{
+        color: #1d2c3b;
+    }
+
+    .price_card{
+        width: 290px;
+    }
+
+    .About_me{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .Portfolio{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .my_photo{
+        height: 500px;
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+        width: 768px;
+    }
+
+    .section_heading{
+        width: 730px;
+    }
+
+    .WebInfo{
+        margin-top: 50px;
+    }
+
+    h1{
+        font-size: 50px;
+        line-height: 41px;
+        margin-bottom: 0px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 23px;
+    }
+
+    h3{
+        font-size: 27px;
+    }
+
+    .price_cards{
+        margin-top: 60px;
+        text-align: center;
+        grid-template-areas: 
+        "A"
+        "B"
+        "C";
+    }
+
+    .price_card{
+        margin-left: auto;
+        margin-right: auto;
+        width: 330px;
+    }
+
+    .price_card h3{
+        font-size: 31px;
+    }
+
+    .price_card p{
+        font-size: 31px;
+    }
+
+    .contact_logo{
+        display: none;
+    }
+
+    .body_contacts{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left_site_contacts{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .right_site_contacts{
+        margin: auto;
+    }
+
+    .my_photo{
+        height: 400px;
+    }
+
+    .portfolio_github{
+        width: 730px;
+    }
+
+    .About_me p{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px){
+    .nav_link{
+        font-size: 19px;
+    }
+
+    .logo{
+        height: 40px;
+    }
+
+    .container{
+        width: 576px;
+    }
+
+    .section_heading{
+        width: 550px;
+    }
+
+    header p{
+        font-size: 18px;
+    }
+
+    .portfolio_github{
+        width: 500px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .my_photo{
+        height: 253px;
+        margin-top: 0px;
+    }
+
+    .About_me p {
+        width: 480px;
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 40px;
+        line-height: 35px;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+    
+    p{
+        font-size: 20px;
+    }
+
+    .WebInfo{
+        margin-top: 0px;
+    }
+
+    .nav_list{
+        width: none;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+
+    .my_photo{
+        margin-top: 20px;
+        height: 280px;
+    }
+
+    .portfolio_github h3{
+        font-size: 18px;
+    }
+
+    .portfolio_button{
+        height: 30px;
+        width: 80px;
+        padding: 0;
+        font-size: 16px;
+        margin-top: auto;
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        width: 412px;
+    }
+
+    .section_heading{
+        width: 400px;
+    }
+
+    .header_body{
+        padding: 0px;
+    }
+
+    .nav_link{
+        font-size: 14px;
+        margin-right: 0px;
+    }
+
+    .nav_item:not(:last-child){
+        margin-right: 5px;
+    }
+
+    .nav_link:hover{
+        font-size: 16px;
+    }
+
+    .navbar{
+        height: 50px;
+    }
+
+    .About_me p{
+        width: 390px;
+    }
+
+    .my_photo{
+        height: 250px;
+        margin-top: 50px;
+        margin-left: 15px;
+    }
+
+    .WebInfo{
+        margin-top: 0px;
+    }
+
+    .header_body{
+        margin-top: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio_port{
+        display: none;
+    }
+
+    .portfolio_github{
+        justify-content: right;
+        width: 400px;
+    }
+
+    .h3{
+        font-size: 15px;
+    }
+
+    .logo{
+        height: 30px;
+    }
+
+    footer p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 410px){
+    .container{
+        width: 360px;
+    }
+
+    .section_heading{
+        width: 350px;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+
+    .portfolio_github{
+        justify-content: right;
+        width: 350px;
+    }
+
+    .About_me p{
+        width: 330px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .nav_item:not(:last-child){
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 360px){
+    .container{
+        width: 320px;
+    }
+
+    .section_heading{
+        width: 310px;
+    }
+
+    .About_me p{
+        width: 290px;
+    }
+
+    .portfolio_github{
+        justify-content: right;
+        width: 310px;
+    }
+
+    .Portfolio h3{
+        font-size: 24px;
+    }
+
+    .Portfolio p{
+        font-size: 16px;
+    }
+
+    .price_card{
+        width: 310px;
+    }
+
+    .nav_item:not(:last-child){
+        margin-right: 0px;
+    }
+}
